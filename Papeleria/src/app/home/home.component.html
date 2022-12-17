@@ -1,1 +1,26 @@
-<p>bienvenido</p>
+
+<div class="row d-flex justify-content-center ms-4 mt-3">
+    
+    <div class="row d-block w-75">
+        <div class="card text-dark bg-light mb-3">
+            <div class="card-body me-4">
+                <h5 class="card-title" style="color: black;">Siempre trataremos de resorver tus problemas</h5>
+                <p class="card-text">
+                    Somos una papeleria donde realizamos todo tipo de trabajos, una impresión de ultimo
+                    momento, una gran cantidad de revistas, muy buena selección de libros, un punto de entrega
+                    de amazon, y más cosas.
+                    Siempre con una sonrisa y de la mejor forma.
+                    Si te interesan nuestros servicios, por favor pasa tu raton por encima de las imagenes inferiores.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex">
+        <div class="col" *ngFor="let i of aCatalogs">
+            <app-catalogcard name={{i.sTitle}} content={{i.sContent}} PDFLink={{i.sPDFLink}} ImgUrl={{i.sIMGUrl}}>
+            </app-catalogcard>
+        </div>
+    </div>
+        
+</div>
