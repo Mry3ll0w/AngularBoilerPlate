@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
 import { HomeComponent } from './home/home.component';
 import { CatalogcardComponent } from './catalogcard/catalogcard.component';
+import { FrecuentedQuestionsComponent } from './frecuented-questions/frecuented-questions.component';
+import { LocationComponent } from './location/location.component';
+import { ServicesComponent } from './services/services.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
     HomeComponent,
-    CatalogcardComponent
+    CatalogcardComponent,
+    FrecuentedQuestionsComponent,
+    LocationComponent,
+    ServicesComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
