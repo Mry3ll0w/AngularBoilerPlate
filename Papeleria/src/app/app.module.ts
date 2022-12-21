@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,8 @@ import { FrecuentedQuestionsComponent } from './frecuented-questions/frecuented-
 import { LocationComponent } from './location/location.component';
 import { ServicesComponent } from './services/services.component';
 import { BooksComponent } from './books/books.component';
+import { GOOGLE_MAPS_API_CONFIG, NgMapsGoogleModule } from '@ng-maps/google';
+import { ItemcardComponent } from './itemcard/itemcard.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { BooksComponent } from './books/books.component';
     FrecuentedQuestionsComponent,
     LocationComponent,
     ServicesComponent,
-    BooksComponent
+    BooksComponent,
+    ItemcardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgMapsGoogleModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
