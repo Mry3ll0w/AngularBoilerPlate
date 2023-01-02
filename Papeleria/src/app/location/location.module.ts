@@ -1,4 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgMapsCoreModule } from '@ng-maps/core';
+import { NgMapsGoogleModule } from '@ng-maps/google';
 import { CommonModule } from '@angular/common';
 import { GOOGLE_MAPS_API_CONFIG } from '@ng-maps/google';
 
@@ -9,7 +11,6 @@ import { GOOGLE_MAPS_API_CONFIG } from '@ng-maps/google';
   imports: [
     CommonModule
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   providers: [
     {
     provide: GOOGLE_MAPS_API_CONFIG,

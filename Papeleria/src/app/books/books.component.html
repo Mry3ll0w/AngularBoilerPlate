@@ -1,1 +1,7 @@
-<p>books works!</p>
+<div class="row">
+    <div *ngFor="let i of aCategory">
+        <div class="col">
+            <app-itemcard sTitle="{{i.name}}" sImgUrl="{{i.imgUrl}}"></app-itemcard>
+        </div>
+    </div>
+</div>

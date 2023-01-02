@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-itemcard',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./itemcard.component.css']
 })
 export class ItemcardComponent {
+
+  @Input() sImgUrl :string;
+  @Input() sDescription ?:string;
+  @Input() sTitle :string;
+  @Input() sContent ?:string;
+  
+  constructor(){
+    this.sImgUrl = String();
+    this.sTitle = String();
+  }
 
 }
