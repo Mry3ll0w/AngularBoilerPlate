@@ -11,7 +11,7 @@ export class ItemcardComponent {
   @Input() sDescription ?:string;
   @Input() sTitle :string;
   @Input() sContent ?:string;
-  
+  @Input() sExtraInfo ?: string;
   constructor(){
     this.sImgUrl = String();
     this.sTitle = String();
